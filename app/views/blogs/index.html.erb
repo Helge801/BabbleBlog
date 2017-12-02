@@ -13,19 +13,17 @@
     </tr>
   </thead>
 
-  <tbody>
+  <div>
     <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.subtitle %></td>
-        <td><%= blog.body %></td>
-        <td><%= blog.image %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div><%= blog.title %></div>
+        <div><%= blog.subtitle %></div>
+        <div><%= blog.body %></div>
+        <div><%=image_tag blog.image %></div>
+        <div><%= link_to 'Show', blog %></div>
+        <div><%= link_to 'Edit', edit_blog_path(blog) %></div>
+        <div><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></div>
     <% end %>
-  </tbody>
+  </div>
 </table>
 
 <br>
