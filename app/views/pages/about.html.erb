@@ -1,2 +1,26 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<div id="main_div">
+  <div id="header_div">
+    <div id="header_left" class="foothead">
+      <p id="title_p"><span>B</span>abble <span>B</span>log</p>
+    </div>
+    <div id="header_right">
+      <ul>
+        <li><%= link_to "Home", pages_home_path %></li>
+        <li><%= link_to "Blogs", blogs_path %></li>
+        <li><%= link_to "Gallery", pages_gallery_path %></li>
+        <li><%= link_to "Reader", pages_reader_path %></li>
+        <li><%= link_to "About", pages_about_path %></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content_div">
+    <h1></h1>
+    <p>My name is Bryan,</p>
+    <p>I created this page as my first school weekend projects. I dont know how to use partials so the code is extreamly redundant and I seem to be having trouble with styles bleeding from one page to the other but I think I have a good handle on handling the information from the database and getting it where I want. I hope you enjoy looking at this fake page!</p>
+  </div>
+
+  <div id="footer_div" class="foothead">
+    <p><em>&reg Registered trademark of nothing at all, no rights reserved</em></p>
+  </div>
+</div>
